@@ -5,7 +5,7 @@ OBJECTIVE:-
 
 DESCRIPTION:-
 There are two main executable .pl files:
-  1.Engine.pl    : This is the main executable file. It evaluates the status of the provided packet using the rule base present in the 'Rulebase.pl' file. 
+  1.Engine.pl    : This is the main executable file. It evaluates the status of the provided packet using the rule base        present in the 'Rulebase.pl' file. 
 
   2.RuleBase.pl  : This is the secondary file, which contains the rules for assigning the status of the input packet.
 
@@ -30,14 +30,14 @@ USAGE:-
 
 NOTE: If the 'F' is a number instead of a string, then 'G' and 'H' are redundant and can be given any value
 
-  3. Every packet will always be to or from our system, so every packet should have either the IP Source Address (D) or the IP Destination Address (E) same as the system's address                (present in myip function of Rulebase.pl). A default value of myip is present in the rulebase ("192.168.1.106").
+  3. Every packet will always be to or from our system, so every packet should have either the IP Source Address (D) or the 	IP Destination Address (E) same as the system's address                (present in myip function of Rulebase.pl). A 	     default value of myip is present in the rulebase ("192.168.1.106").
 	
   4. Output depicts one of the three possible states: Accept, Reject and Drop.	
 	?- Packet has been Dropped (for the example give above)
       If invalid input is given, the output is "Invalid Input".
 
 MODIFYING THE RULE BASE:-
-	The Rulebase.pl executable file is editable, and enables the user to add/remove packet conditions. For example a 'Reject' packet condition looks like:
+	The Rulebase.pl executable file is editable, and enables the user to add/remove packet conditions. For example a 	'Reject' packet condition looks like:
 	
 	packet(reject, A, B, C, D, E, F, G, H):-	%can also specify 'drop', 'invalid_input' in the first argument
 	(rangeAdapter(e,A,f),				%Specify user required conditions
