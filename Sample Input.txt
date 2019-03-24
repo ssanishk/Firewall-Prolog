@@ -1,0 +1,61 @@
+Sample Inputs and Outputs:
+
+	1.determine(a, 10, "mpls", "95.168.1.56", "192.168.1.106", "tcp", 860, 740).
+	O/P:Packet has been rejected.
+
+	2.determine(b, 12, "arp", "220.16.1.78", "2002:45:0:0:34b:56:0:78d", "icmp", 8, 5).
+	O/P:Invalid Input.
+
+	3.determine(i, 3, "sna", "192.168.1.106", "192.168.1.106", "udp", 5634, 2342).
+	O/P:Packet has been rejected.
+
+	4.determine(e, 39, "mpls", "192.168.1.106",  "230.14.1.53", "udp", 5634, 2342).
+	O/P:Packet has been rejected.
+
+	5.determine( g, 10, "arp", "64:ff9b:0:0:0:2:45bc:845b", "192.168.1.106", "udp", 8600, 7402).
+	O/P:Packet has been rejected.
+
+	6.determine(g, 19, "ipx", "45.45.3.45", "192.168.1.106", "tcp", 7170, 5653).
+	O/P:Packet has been rejected.
+
+	7.determine(c, 14, "mpls", "128.197.2.1", "192.168.1.106", "tcp", 11220, 54450).
+	O/P:Packet has been rejected.
+
+	8.determine(l, 26, "sna", "192.168.1.106", "2002:45:0:0:34b:56:0:78d", "udp", 5634, 2342).
+	O/P:Packet has been rejected.
+
+	9.determine(m, 15, "mpls", "192.168.1.106", "101:45:0:45:0:56:0:78d", "tcp", 8960, 4560).
+	O/P:Packet has been dropped.
+
+	10.determine(o, 7, "aarp", "98.45.2.34", "192.168.1.106", "icmp", 5, 1).
+	O/P:Packet has been dropped.
+
+	11.determine(j, 17, "sna", "67b:2:0:ff:0:be:0:76e", "192.168.1.106", "udp", 5432, 110).
+	O/P:Packet has been dropped.
+
+	12.determine(a, 2, "arp", "192.168.1.106", "15.1.2.3", "tcp", 5500, 6979).
+	O/P:Packet has been dropped.
+
+	13.determine(g, 20, "mpls", "192.168.1.106", "154.168.1.106", "udp", 6634, 2342).
+	O/P:Packet has been Accepted.
+
+	14.determine(e, 60, "aarp", "205:45e:0:0:cb:56e:0:78e" , "192.168.1.106", "udp", 56300, 2389).
+	O/P:Packet has been Accepted.
+
+	15.determine(z, 2, "sna", "192.168.1.106", "192.168.1.1", "udp", 56340, 2342).
+	O/P:Invalid Input.
+
+	16.determine(a, 2, "sna", "gg:45b:0:0:0:23:bf34:47b", "43b:45b:0:0:0:23:bf34:47b", "tcp", 56340, 2342).
+	O/P:Invalid Input.
+
+	17.determine(z, 2, "sna", "260.168.245.106", "192.168.1.1", "udp", 56340, 2342).
+	O/P:Invalid Input.
+
+	18.determine(e, 2, "kls", "60.18.5.10", "192.168.1.1", "tcp", 56340, 2342).
+	O/P:Invalid Input.
+
+	19.determine(f, 2, "mpls", "2002:45:0:0:34b:56:0:78d", "192.168.1.1", "udp", 66740, 2342).
+	O/P:Invalid Input.
+
+	20.determine(z, 2, "sna", "34.25.4.63", "2002:45:0:0:34b:56:0:78d", "icmpv6", 56340, 2323).
+	O/P:Invalid Input.
