@@ -1,15 +1,19 @@
 # FIREWALL SYSTEM
 
-> OBJECTIVE:-
+#### OBJECTIVE:-
+
    To check if a given valid input packet of data gets 'Rejected','Accepted' or 'Dropped' based on a modifiable Rule base.
 
-> DESCRIPTION:-
+#### DESCRIPTION:-
+
 There are two main executable .pl files:
-  1.Engine.pl    : This is the main executable file. It evaluates the status of the provided packet using the rule base        present in the 'Rulebase.pl' file. 
+ 
+ 1.Engine.pl    : This is the main executable file. It evaluates the status of the provided packet using the rule base        present in the 'Rulebase.pl' file. 
 
   2.RuleBase.pl  : This is the secondary file, which contains the rules for assigning the status of the input packet.
 
-> USAGE:-
+#### USAGE:-
+
   1. Load the file Engine.pl on Swi-Prolog after placing in root directory.
 	?- ['Engine.pl']
 
@@ -36,7 +40,8 @@ NOTE: If the 'F' is a number instead of a string, then 'G' and 'H' are redundant
 	?- Packet has been Dropped (for the example give above)
       If invalid input is given, the output is "Invalid Input".
 
-MODIFYING THE RULE BASE:-
+#### MODIFYING THE RULE BASE:-
+
 	The Rulebase.pl executable file is editable, and enables the user to add/remove packet conditions. For example a 	'Reject' packet condition looks like:
 ```	
 	packet(reject, A, B, C, D, E, F, G, H):-	%can also specify 'drop', 'invalid_input' in the first argument
